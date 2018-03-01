@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic-Tac-Toe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Priyabrata Biswas">
+    <meta name="description" content="Can you win against the computer? Check out this Tic-Tac-Toe game!">
+    <meta name="keywords" content="online game, arcade, tictactoe, Tic-Tac-Toe, multiplayer, puzzle">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Pacifico|Ubuntu">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="animated bounce">Tic-Tac-Toe</h1>
+    </header>
+    <div id="container" class="animated bounceInLeft">
+        <div id="welcome">
+            <p></p>
+            <button class="choice"></button>
+            <button class="choice"></button>
+            <button id="back" style="display: none;">Back</button>
+        </div>
+        <div id="info" style="display: none;">
+            <p class="update player"></p>
+            <p class="update dialogue"></p>
+            <p class="update reset">
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+            </p>
+        </div>
+        <div id="board" style="display: none;">
+            <table>
+                <tr>
+                    <td class="row1 col1 pridiag cell0"></td><td class="row1 col2 cell1"></td><td class="row1 col3 secdiag cell2"></td>
+                </tr>
+                <tr>
+                    <td class="row2 col1 cell3"></td><td class="row2 col2 pridiag secdiag cell4"></td><td class="row2 col3 cell5"></td>
+                </tr>
+                <tr>
+                    <td class="row3 col1 secdiag cell6"></td><td class="row3 col2 cell7"></td><td class="row3 col3 pridiag cell8"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <p class="animated fadeIn">by<br/><a href="https://pbiswas101.wordpress.com/" target="_blank">Priyabrata Biswas</a></p>
+    </footer>
+</body>
+</html>

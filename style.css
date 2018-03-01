@@ -1,0 +1,199 @@
+html {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgba(27, 122, 136, 0.7);
+}
+
+header {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Pacifico', cursive;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+}
+
+#container {
+    background-color: rgba(0, 0, 0, 0.95);
+    width: 90%;
+    height: 60%;
+    margin: 10% auto;
+    box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.85);
+}
+
+#info {
+    width: 100%;
+    height: 20%;
+}
+
+.update {
+    display: inline-block;
+    color: white;
+    padding: 1em;
+    font-size: 1em;
+    font-family: font-family: 'Ubuntu', sans-serif;
+}
+
+.dialogue {
+    font-size: 1em;
+    color: white;
+    font-family: sans-serif;
+    text-shadow: 0 0 0.5em red;
+}
+
+.reset {
+    float: right;
+}
+
+#board {
+    width: 100%;
+    height: 80%;
+}
+
+table {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+td {
+    width: 33%;
+    font-size: 1.2em;
+    border: 0.3em solid rgba(50, 136, 27, 0.7);
+    border-collapse: collapse;
+    font-family: 'Pacifico', cursive;
+    background-color: rgba(0, 0, 0, 0.95);
+    color: white;
+    text-align: center;
+}
+
+td:hover {
+    cursor: pointer;
+}
+
+.col1 {
+    border-left: none;
+}
+
+.col3 {
+    border-right: none;
+}
+
+.row1 {
+    border-top: none;
+}
+
+.row3 {
+    border-bottom: none;
+}
+
+#welcome {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5em;
+    padding: 3em 2em;
+}
+
+#welcome p {
+    text-align: center;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    text-shadow: 0 0 0.5em red;
+}
+
+#welcome .choice {
+    width: 75%;
+    margin: auto;
+    padding: 0.5em 1.5em;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    box-shadow: 0 0 0.5em red;
+    outline: none;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 10em;
+    font-size: 1em;
+}
+
+#back {
+    width: 50%;
+    margin-left: 9em;
+    margin-top: 1em;
+    color: rgba(27, 122, 136, 0.7);
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+}
+
+@media only screen and (min-width: 901px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    #container {
+        width: 30%;
+        margin: 2% auto;
+        transition-property: box-shadow;
+        transition-duration: 0.5s;
+    }
+
+    #container:hover {
+        box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.85);
+    }
+
+    #welcome {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+}
+
+    #welcome p {
+        grid-column: 1/3;
+    }
+
+    #welcome .choice {
+        width: 100%;
+        padding: 1em 2em;
+        transition-property: color;
+        transition-duration: 1s;
+    }
+
+    #back {
+        grid-column: 2/3;
+        margin-left: 5em;
+        margin-top: 2em;
+    }
+
+    #welcome .choice:hover {
+        cursor: pointer;
+        background-color: rgb(255, 250, 250);
+        color: black;
+    }
+
+    #back:hover, i:hover {
+        cursor: pointer;
+    }
+
+    .dialogue {
+        font-size: 1.5em;
+    }
+}
